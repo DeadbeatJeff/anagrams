@@ -35,6 +35,6 @@ while True:
             for j in range(len(list[i])):
                 teststring = teststring + word1[int(list[i][j])]
             # print(teststring)
-            for line in open("/usr/share/dict/american-english"):
+            for line in open("dict.txt"):
                 if teststring == line.rstrip().lower():
                     print(line.rstrip())
