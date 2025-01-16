@@ -19,7 +19,7 @@ def symmetric(n):
 
 while True:
     try:
-        word = str(input("Enter a line of scrambled text (ctrl-d to exit): " ))
+        word = str(input("Enter a line of scrambled text (ctrl-z+enter to exit): " ))
 
     except EOFError as e:
         print("")
