@@ -18,10 +18,9 @@ def symmetric(n):
         return list1
 
 while True:
-    try:
-        word = str(input("Enter a line of scrambled text (ctrl-z+enter to exit): " ))
+    word = str(input("Enter a line of scrambled text (enter to exit): " ))
 
-    except EOFError as e:
+    if word == "":
         print("")
         break
 
