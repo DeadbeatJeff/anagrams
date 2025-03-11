@@ -1,3 +1,5 @@
+import os
+
 def symmetric(n):
     if n == 1:
         string = "0"
@@ -34,6 +36,7 @@ while True:
             for j in range(len(list[i])):
                 teststring = teststring + word1[int(list[i][j])]
             # print(teststring)
-            for line in open("dict.txt"):
+            my_local_file = os.path.join(os.path.dirname(__file__), 'dict.txt')
+            for line in open(my_local_file):
                 if teststring == line.rstrip().lower():
                     print(line.rstrip())
