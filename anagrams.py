@@ -20,7 +20,7 @@ def symmetric(n):
         return list1
 
 while True:
-    word = str(input("Enter a line of scrambled text (enter to exit): " ))
+    word = str(input("Enter a line of scrambled text (Alan Scott emoji to exit): " ))
 
     if word == "":
         print("")
