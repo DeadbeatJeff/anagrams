@@ -8,15 +8,9 @@ def symmetric(n):
     else:
         list = symmetric(n-1)
         list1 = []
-        for i in range(len(list)):
-            for j in range(len(list[i])):
-                if j == 0:
-                    list1 = list1 + [str(n-1) + list[i][j:n-1:]]
-                elif j == 1:
-                    list1 = list1 + [list[i][:j:] + str(n-1) + list[i][j:n-1:]]
-                else:
-                    list1 = list1 + [list[i][:j:] + str(n-1) + list[i][j:n-1:]]
-            list1 = list1 + [list[i] + str(n-1)]
+        for w in list:
+            for i in range(len(w)+1):
+                list1.append(w[:i] + str(n-1) + w[i:])
         return list1
 
 while True:
